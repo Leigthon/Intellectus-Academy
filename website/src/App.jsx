@@ -9,6 +9,7 @@ import Subjects from "@/pages/Subjects";
 import Tutors from "@/pages/Tutors";
 import Pricing from "@/pages/Pricing";
 import Contact from "@/pages/Contact";
+import Resources from "@/pages/Resources";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/tutors" element={<Tutors />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resources" element={<Resources/>}/>
         </Routes>
         <Footer />
         <Toaster position="top-center" />

@@ -26,8 +26,11 @@ export default function Subjects() {
                   <div
                     className="w-3 h-3 rounded-full"
                     
-                    style={{ backgroundColor: s.color }}
+                    style={{ backgroundColor: s.color,
+                     }}
                   />
+              
+
                 </div>
                 <h3 className="text-xl font-bold text-[#2c3e73] mb-2">
                   {s.name}

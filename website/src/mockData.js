@@ -105,9 +105,10 @@ export const pricingPlans = [
   {
     id: 1,
     name: "Individual Sessions",
-    price: "R250",
+    price: "R100",
     period: "per hour",
     features: [
+      "Online",
       "One-on-one tutoring",
       "Flexible scheduling",
       "Personalized learning plan",
@@ -119,39 +120,39 @@ export const pricingPlans = [
   {
     id: 2,
     name: "Weekly Package",
-    price: "R900",
+    price: "R120",
     period: "per week (4 hours)",
     features: [
-      "4 hours of tutoring",
-      "Same tutor consistency",
-      "Priority scheduling",
-      "Progress reports",
-      "Study materials included",
-      "Save R100",
+      "In Person",
+      "One-on-one tutoring",
+      "Flexible scheduling",
+      "Personalized learning plan",
+      "Progress tracking",
+      "All subjects available",,
     ],
     popular: true,
   },
-  {
-    id: 3,
-    name: "Intensive Prep",
-    price: "R3200",
-    period: "per month (16 hours)",
-    features: [
-      "16 hours of tutoring",
-      "Exam preparation focus",
-      "Past papers & memos",
-      "Weekly progress reports",
-      "WhatsApp support",
-      "Save R800",
-    ],
-    popular: false,
-  },
+  // {
+  //   id: 3,
+  //   name: "Intensive Prep",
+  //   price: "R3200",
+  //   period: "per month (16 hours)",
+  //   features: [
+  //     "16 hours of tutoring",
+  //     "Exam preparation focus",
+  //     "Past papers & memos",
+  //     "Weekly progress reports",
+  //     "WhatsApp support",
+  //     "Save R800",
+  //   ],
+  //   popular: false,
+  // },
 ];
 
 export const contactInfo = {
   phone: ["068 791 2425", "083782 8477", "064661333"],
-  email: "info@intellectusacademy.co.za",
-  address: "KwaZulu-Natal, South Africa",
+  email: "myintellectusacademy@gmail.com",
+  address: "Cape Town, South Africa",
   hours: "Mon-Fri: 2PM-8PM, Sat: 9AM-5PM",
 };
 
