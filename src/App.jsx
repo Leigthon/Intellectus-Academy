@@ -1,5 +1,6 @@
+import React, { useEffect } from 'react'; // Import useEffect from React
 import "@/App.css";
-import { BrowserRouter, Routes, Route, useLocation, useEffect } from "react-router-dom"; // Add useLocation, useEffect
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"; // Import only router specific hooks here
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -43,6 +44,7 @@ export default function App() {
     </div>
   );
 }
+
 // import "@/App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Toaster } from "@/components/ui/sonner";
