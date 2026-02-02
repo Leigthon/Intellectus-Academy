@@ -14,7 +14,7 @@ import Resources from "@/pages/Resources";
 export default function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/Intellectus-Academy">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
