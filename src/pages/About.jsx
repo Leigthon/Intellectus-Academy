@@ -8,7 +8,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#2c3e73]/5 to-white">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-10">
             <h1 className="text-5xl font-bold text-[#2c3e73] mb-6">
               About Intellectus Academy
             </h1>
@@ -51,9 +51,9 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="grok-video-7f5267f4-a268-421c-b96f-f2e7c034e5c1.mp4"
+                src="Screenshot 2026-02-04 at 21.43.48.png"
                 alt="Students studying"
-                className="rounded-2xl shadow-2xl"
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
             </div>
           </div>
@@ -110,10 +110,10 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-[#2c3e73] text-black">
+            <Card className="bg-[#2c3e73] text-white">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-black/90 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   To provide accessible, high-quality tutoring that empowers
                   students to achieve their academic goals and develop a lifelong
                   love for learning. We are committed to making education
@@ -122,10 +122,10 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1ac8db] text-black">
+            <Card className="bg-[#1ac8db] text-white">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-black/90 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   To be recognized as the leading tutoring academy in
                   Cape Town, known for transforming academic struggles into
                   success stories and helping every student reach their full
@@ -182,4 +182,3 @@ const About = () => {
 };
 
 export default About;
-

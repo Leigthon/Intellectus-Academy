@@ -3,6 +3,15 @@ import { subjects } from "@/mockData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Calculator, Atom, Microscope, Receipt } from "lucide-react";
+
+// Map icon names to icon components
+const iconMap = {
+  Calculator,
+  Atom,
+  Microscope,
+  Receipt,
+};
 
 export default function Subjects() {
   return (
@@ -16,31 +25,35 @@ export default function Subjects() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {subjects.map((s) => (
-            <Card
-              key={s.id}
-              className="border-2 hover:border-[#1ac8db] transition-all hover:shadow-xl"
-            >
-              <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-xl bg-[#1ac8db]/10 flex items-center justify-center mb-4">
-                  <div
-                    className="w-3 h-3 rounded-full"
-                    // style={{icon: s.icon}}
-                    style={{ Icon: s.icon,
-                     }}
-                  />
-              
-
-                </div>
-                <h3 className="text-xl font-bold text-[#2c3e73] mb-2">
-                  {s.name}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {s.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+          {subjects.map((s) => {
+            const IconComponent = iconMap[s.icon];
+            return (
+              <Card
+                key={s.id}
+                className="border-2 hover:border-[#1ac8db] transition-all hover:shadow-xl"
+              >
+                <CardContent className="p-6">
+                  <div 
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+                    style={{ backgroundColor: `${s.color}10` }}
+                  >
+                    {IconComponent && (
+                      <IconComponent 
+                        className="w-6 h-6" 
+                        style={{ color: s.color }}
+                      />
+                    )}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#2c3e73] mb-2">
+                    {s.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {s.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
         <div className="mt-12 flex justify-center">
