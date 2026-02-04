@@ -7,7 +7,7 @@ import { subjects, testimonials } from "../mockData";
 
 const Home = () => {
   const stats = [
-    { icon: Users, value: "50+", label: "Students Tutored" },
+    { icon: Users, value: "100+", label: "Students Tutored" },
     { icon: Award, value: "High", label: "Success Rate" },
     { icon: TrendingUp, value: "Siginificant", label: "Average Grade Improvement" },
   ];
@@ -264,69 +264,6 @@ const Home = () => {
                   <p className="text-gray-600 leading-relaxed">
                     {feature.description}
                   </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] opacity-30">
-          <svg viewBox="0 0 600 600" className="w-full h-full">
-            <path
-              d="M0,300 Q150,200 300,300 T600,300 L600,600 L0,600 Z"
-              fill="#2c3e73"
-              opacity="0.05"
-            />
-          </svg>
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <span className="text-[#1ac8db] font-semibold text-lg tracking-wide uppercase">
-              Success Stories
-            </span>
-            <h2 className="text-5xl font-black text-[#2c3e73] mb-4 mt-2">
-              What Our Students Say
-            </h2>
-            <p className="text-gray-600 text-xl font-light">
-              Real success stories from real students
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <Card
-                key={testimonial.id}
-                className="bg-white hover:shadow-2xl transition-all border-2 hover:border-[#1ac8db] group hover:-translate-y-2"
-              >
-                <CardContent className="p-8">
-                  <div className="flex gap-1 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="text-[#1ac8db] text-2xl">
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed italic">
-                    "{testimonial.text}"
-                  </p>
-                  <div className="border-t pt-6 flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#1ac8db] to-[#2c3e73] rounded-full flex items-center justify-center text-white font-bold text-lg">
-                      {testimonial.student.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-bold text-[#2c3e73]">
-                        {testimonial.student}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {testimonial.grade} • {testimonial.subject}
-                      </p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             ))}

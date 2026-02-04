@@ -25,8 +25,8 @@ export default function Subjects() {
                 <div className="w-12 h-12 rounded-xl bg-[#1ac8db]/10 flex items-center justify-center mb-4">
                   <div
                     className="w-3 h-3 rounded-full"
-                    
-                    style={{ backgroundColor: s.color,
+                    // style={{icon: s.icon}}
+                    style={{ Icon: s.icon,
                      }}
                   />
               

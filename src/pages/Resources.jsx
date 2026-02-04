@@ -50,7 +50,7 @@ export default function Login() {
               to="/"
               className="text-3xl font-black text-[#2c3e73] tracking-tight hover:text-[#1ac8db] transition"
             >
-              LM
+              IS
             </Link>
 
             <Link to="/">
@@ -74,10 +74,10 @@ export default function Login() {
               Login
             </h1>
             <p className="text-2xl text-[#1ac8db] font-semibold">
-              Welcome Home Leighton
+              Welcome Student
             </p>
             <p className="text-gray-600 text-lg font-light max-w-md mx-auto">
-              Personal access only – site owner login
+              please enter your student details to gain acccess to our resoures
             </p>
           </div>
 
@@ -114,9 +114,7 @@ export default function Login() {
                 </Button>
 
                 <p className="text-center text-sm text-gray-500 mt-6 leading-relaxed">
-                  This is a private login for the site owner.<br />
-                  No public access is allowed.<br />
-                  Return to the main site via the link above.
+                  If you are struggling or unsure of your details please contanct your tutor for assistance.<br />
                 </p>
 
                 {statusMessage && (

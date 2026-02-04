@@ -30,8 +30,8 @@ const About = () => {
                   Founded with a passion for education, Intellectus Academy
                   began as a small initiative to help struggling students find
                   their academic footing. Today, we've grown into a trusted
-                  tutoring center serving hundreds of students across
-                  KwaZulu-Natal.
+                  tutoring center serving many students across
+                  Cape Town.
                 </p>
                 <p>
                   What started as one-on-one tutoring sessions has evolved into
@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=600&fit=crop"
+                src="grok-video-7f5267f4-a268-421c-b96f-f2e7c034e5c1.mp4"
                 alt="Students studying"
                 className="rounded-2xl shadow-2xl"
               />
@@ -110,10 +110,10 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-[#2c3e73] text-white">
+            <Card className="bg-[#2c3e73] text-black">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-black/90 leading-relaxed">
                   To provide accessible, high-quality tutoring that empowers
                   students to achieve their academic goals and develop a lifelong
                   love for learning. We are committed to making education
@@ -122,12 +122,12 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1ac8db] text-white">
+            <Card className="bg-[#1ac8db] text-black">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-black/90 leading-relaxed">
                   To be recognized as the leading tutoring academy in
-                  KwaZulu-Natal, known for transforming academic struggles into
+                  Cape Town, known for transforming academic struggles into
                   success stories and helping every student reach their full
                   potential.
                 </p>

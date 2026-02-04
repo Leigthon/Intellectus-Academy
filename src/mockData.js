@@ -34,44 +34,25 @@ export const subjects = [
 export const tutors = [
   {
     id: 1,
-    name: "Thandi Mthembu",
-    subject: "Mathematics",
-    qualification: "BSc Mathematics, UKZN",
-    experience: "5 years",
+    name: "Leigthon Messina",
+    subject: "Mathematics and Physical Sciences",
+    qualification: "BSc Computer Science and Computer Engineering final year,UCT",
+    experience: "4 years",
     image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-    bio: "Passionate about making complex mathematical concepts simple and accessible.",
+      "profile images/WhatsApp Image 2025-11-22 at 13.01.48.jpeg",
+    // bio: "Passionate about making complex mathematical concepts simple and accessible.",
   },
   {
     id: 2,
-    name: "Sipho Ndlovu",
-    subject: "Physical Sciences",
-    qualification: "BSc Physics & Chemistry, Wits",
-    experience: "7 years",
+    name: "Asheeqah Adonis",
+    subject: "Mathematics , Physical Sciences,Account and Life Sciences",
+    qualification: "MBHCHB third year",
+    experience: "2 years",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
-    bio: "Specializes in practical applications and exam preparation techniques.",
+      "profile images/WhatsApp Image 2026-02-02 at 15.05.54.jpeg",
+    // bio: "Specializes in practical applications and exam preparation techniques.",
   },
-  {
-    id: 3,
-    name: "Nomsa Dlamini",
-    subject: "Life Sciences",
-    qualification: "BSc Biological Sciences, UCT",
-    experience: "4 years",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
-    bio: "Creates engaging lessons that bring biology to life for every student.",
-  },
-  {
-    id: 4,
-    name: "Mandla Khumalo",
-    subject: "Accounting",
-    qualification: "BCom Accounting, UKZN",
-    experience: "6 years",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    bio: "Expert in simplifying financial concepts and building confidence.",
-  },
+  
 ];
 
 export const testimonials = [
@@ -104,7 +85,7 @@ export const testimonials = [
 export const pricingPlans = [
   {
     id: 1,
-    name: "Individual Sessions",
+    name: "Online Sessions",
     price: "R100",
     period: "per hour",
     features: [
@@ -119,9 +100,9 @@ export const pricingPlans = [
   },
   {
     id: 2,
-    name: "Weekly Package",
+    name: "In-Person Sessions",
     price: "R120",
-    period: "per week (4 hours)",
+    period: "per hour",
     features: [
       "In Person",
       "One-on-one tutoring",

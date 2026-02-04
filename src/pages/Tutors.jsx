@@ -25,7 +25,7 @@ export default function Tutors() {
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-full h-48 object-cover rounded-xl mb-4"
+                  className="w-full h-50 object-cover rounded-xl mb-4"
                 />
                 <h3 className="text-xl font-bold text-[#2c3e73]">{t.name}</h3>
                 <p className="text-[#1ac8db] font-semibold text-sm mt-1">
