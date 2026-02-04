@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="Screenshot 2026-02-04 at 21.43.48 (2).png"
+                src="images/Screenshot 2026-02-04 at 21.43.48 (2).png"
                 alt="Students studying"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
