@@ -130,6 +130,10 @@ export const pricingPlans = [
   // },
 ];
 
+export const images ={
+  image:"images/Screenshot2026-02-04at21.43.48(2).jpg",
+}
+
 export const contactInfo = {
   phone: ["068 791 2425", "083782 8477", "064661333"],
   email: "myintellectusacademy@gmail.com",
