@@ -111,10 +111,10 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-[#2c3e73] text-white">
+            <Card className="bg-[#2c3e73] text-black">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-black/90 leading-relaxed">
                   To provide accessible, high-quality tutoring that empowers
                   students to achieve their academic goals and develop a lifelong
                   love for learning. We are committed to making education
@@ -123,10 +123,10 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1ac8db] text-white">
+            <Card className="bg-[#1ac8db] text-black">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-black/90 leading-relaxed">
                   To be recognized as the leading tutoring academy in
                   Cape Town, known for transforming academic struggles into
                   success stories and helping every student reach their full

@@ -100,7 +100,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1ac8db] text-white">
+            <Card className="bg-[#1ac8db] text-black">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-white/90 leading-relaxed">
