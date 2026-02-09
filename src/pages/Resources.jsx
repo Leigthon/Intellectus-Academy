@@ -6,10 +6,27 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Login() {
   const [statusMessage, setStatusMessage] = useState('');
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatusMessage('Login is not wired to a backend yet. (Demo mode)');
+       const form = document.getElementById('login');
+       const email = form.email.value.trim();
+       const password = form.password.value;
+
+
+       //Debug code
+       console.log("DEBUG LOGIN ATTEMPT ────────────────────");
+       console.log("Email   :", email);
+       console.log("Password:", password);
+       console.log("────────────────────────────────────────");
+      //
+
+      if(email==="leigthonmessina2@gmail.com" && password==="password"){
+        window.location.href="https://www.testpapers.co.za/";
+        return;
+      }
+      
+      setStatusMessage(`Login is not wired to a backend yet. (Demo – ${email} / ${password})`);
   };
 
   return (
@@ -83,7 +100,7 @@ export default function Login() {
 
           <Card className="border border-gray-200/50 bg-white/70 backdrop-blur-xl shadow-2xl rounded-3xl overflow-hidden">
             <CardContent className="p-10 md:p-12">
-              <form onSubmit={handleSubmit} className="space-y-8" autoComplete="on">
+              <form onSubmit={handleSubmit} id="login" className="space-y-8" autoComplete="on">
                 <div className="space-y-2">
                   <input
                     type="email"
