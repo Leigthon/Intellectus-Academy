@@ -14,6 +14,9 @@ export default function Contact() {
     message: "",
   });
 
+  const [status, setStatus] = useState("idle");
+  const [message, setMessage] = useState("");
+
   const canSubmit = useMemo(() => {
     return (
       form.name.trim() &&
@@ -24,14 +27,59 @@ export default function Contact() {
   }, [form]);
 
   function update(key) {
-    return (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
+    return (e) => {
+      setForm((f) => {
+        // @ts-expect-error - dynamic key update is safe here (all values are strings)
+        return { ...f, [key]: e.target.value };
+      });
+    };
   }
 
-  function onSubmit(e) {
+  async function onSubmit(e) {
     e.preventDefault();
-    // Placeholder; wire this to email/CRM later.
-    alert("Thanks! We'll contact you shortly.");
-    setForm((f) => ({ ...f, message: "" }));
+    if (!canSubmit) return;
+
+    setStatus("sending");
+    setMessage("");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xojnvwbp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          subject: form.subject,
+          message: form.message,
+          // Helps "Reply" button work nicely in most email clients
+          _replyto: form.email,
+          // Optional: custom email subject (if your Formspree template supports it)
+          // _subject: `New message - ${form.subject}`,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setMessage("Thank you! We'll get back to you soon.");
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          subject: subjects?.[0]?.name ?? "Mathematics",
+          message: "",
+        });
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (err) {
+      console.error("Form submission error:", err);
+      setStatus("error");
+      setMessage("Something went wrong. Please try again or use WhatsApp/phone.");
+    }
   }
 
   return (
@@ -50,6 +98,7 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-[#2c3e73] mb-6">
                 Book a session
               </h2>
+
               <form onSubmit={onSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
@@ -61,6 +110,7 @@ export default function Contact() {
                       onChange={update("name")}
                       className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1ac8db]"
                       placeholder="Your name"
+                      required
                     />
                   </div>
                   <div>
@@ -73,6 +123,7 @@ export default function Contact() {
                       type="email"
                       className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1ac8db]"
                       placeholder="you@example.com"
+                      required
                     />
                   </div>
                 </div>
@@ -87,6 +138,7 @@ export default function Contact() {
                       onChange={update("phone")}
                       className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1ac8db]"
                       placeholder="e.g. 068 123 4567"
+                      required
                     />
                   </div>
                   <div>
@@ -116,16 +168,29 @@ export default function Contact() {
                     onChange={update("message")}
                     className="w-full rounded-lg border border-gray-300 px-3 py-2 min-h-[140px] focus:outline-none focus:ring-2 focus:ring-[#1ac8db]"
                     placeholder="What are you struggling with? When do you want to start?"
+                    required
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  disabled={!canSubmit}
+                  disabled={!canSubmit || status === "sending"}
                   className="w-full bg-[#1ac8db] hover:bg-[#15a3c0] text-white py-3"
                 >
-                  Send
+                  {status === "sending" ? "Sending..." : "Send"}
                 </Button>
+
+                {status === "success" && (
+                  <p className="text-center text-green-600 font-medium mt-2">
+                    {message}
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-center text-red-600 font-medium mt-2">
+                    {message}
+                  </p>
+                )}
+
                 <p className="text-xs text-gray-500">
                   Prefer WhatsApp/phone? Use the contact details on the right.
                 </p>
@@ -189,4 +254,3 @@ export default function Contact() {
     </div>
   );
 }
-
