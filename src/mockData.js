@@ -46,7 +46,7 @@ export const tutors = [
     id: 2,
     name: "Asheeqah Adonis",
     subject: "Mathematics , Physical Sciences,Account and Life Sciences",
-    qualification: "MBHCHB third year",
+    qualification: "MBChB third year",
     experience: "2 years",
     image:
       "profile images/WhatsApp Image 2026-02-02 at 15.05.54.jpeg",
@@ -135,7 +135,7 @@ export const images ={
 }
 
 export const contactInfo = {
-  phone: ["068 791 2425", "083782 8477", "064661333"],
+  phone: ["068 791 2425", "083 782 8477", "066 466 1333"],
   email: "myintellectusacademy@gmail.com",
   address: "Cape Town, South Africa",
   hours: "Mon-Fri: 2PM-8PM, Sat: 9AM-5PM",
