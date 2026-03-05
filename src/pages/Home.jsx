@@ -1,4 +1,4 @@
-eimport React from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, TrendingUp, Users, Award } from "lucide-react";
 import { Button } from "../components/ui/button";
