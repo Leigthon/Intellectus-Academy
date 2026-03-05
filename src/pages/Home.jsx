@@ -226,19 +226,19 @@ const Home = () => {
                 icon: Award,
               },
               {
-                title: "Flexible Scheduling",
+                title: "Flexible Lesson Scheduling",
                 description:
                   "Book sessions that fit your timetable. We work around your schedule, not the other way around.",
                 icon: CheckCircle,
               },
               {
-                title: "Proven Results",
+                title: "Proven Academic Results",
                 description:
                   "Our students see an average 35% improvement in their grades within 3 months.",
                 icon: TrendingUp,
               },
               {
-                title: "One on one Tutoring",
+                title: "1-on1 Tutoring",
                 description:
                   "Maximum attention for every student. We focus on quality over quantity.",
                 icon: Users,
