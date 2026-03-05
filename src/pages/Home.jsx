@@ -1,4 +1,4 @@
-import React from "react";
+eimport React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, TrendingUp, Users, Award } from "lucide-react";
 import { Button } from "../components/ui/button";
@@ -163,7 +163,7 @@ const Home = () => {
               Real Results That Matter
             </h2>
             <p className="text-xl text-gray-300">
-              Join hundreds of students achieving their dreams
+              Join hundreds of South African students achieving their dreams
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -207,7 +207,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto font-light">
               We're committed to helping you achieve your academic goals with
-              personalized, results-driven support
+              personalized, results-driven tutoring support.
             </p>
           </div>
 
@@ -238,7 +238,7 @@ const Home = () => {
                 icon: TrendingUp,
               },
               {
-                title: "Small Class Sizes",
+                title: "One on one Tutoring",
                 description:
                   "Maximum attention for every student. We focus on quality over quantity.",
                 icon: Users,
