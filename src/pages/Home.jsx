@@ -238,7 +238,7 @@ const Home = () => {
                 icon: TrendingUp,
               },
               {
-                title: "1-on1 Tutoring",
+                title: "1-on-1 Tutoring",
                 description:
                   "Maximum attention for every student. We focus on quality over quantity.",
                 icon: Users,
