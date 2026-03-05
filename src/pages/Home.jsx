@@ -47,7 +47,7 @@ const Home = () => {
             <div className="space-y-8">
               <div className="inline-block">
                 <span className="text-[#1ac8db] font-semibold text-lg tracking-wide uppercase">
-                  Welcome to Intellectus Tutoring
+                  Welcome to Intellectus Academy Tutoring
                 </span>
               </div>
               <h1 className="text-6xl md:text-7xl font-black text-[#2c3e73] leading-[1.1] tracking-tight">
