@@ -31,7 +31,7 @@ const Header = () => {
               className="h-11 w-auto rounded-full object-cover"
             />
             <span className="text-xl font-bold text-[#2c3e73] hidden sm:block">
-              Intellectus Academy
+              Intellectus Academy Tutoring
             </span>
           </Link>
 
