@@ -45,7 +45,7 @@ export const tutors = [
   {
     id: 2,
     name: "Asheeqah Adonis",
-    subject: "Mathematics , Physical Sciences,Account and Life Sciences",
+    subject: "Mathematics , Physical Sciences,Accounting and Life Sciences",
     qualification: "MBChB third year",
     experience: "2 years",
     image:
