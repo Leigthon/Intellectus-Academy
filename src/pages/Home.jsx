@@ -47,7 +47,7 @@ const Home = () => {
             <div className="space-y-8">
               <div className="inline-block">
                 <span className="text-[#1ac8db] font-semibold text-lg tracking-wide uppercase">
-                  Welcome to Intellectus Tutoring
+                  Welcome to Intellectus Academy Tutoring
                 </span>
               </div>
               <h1 className="text-6xl md:text-7xl font-black text-[#2c3e73] leading-[1.1] tracking-tight">
@@ -72,7 +72,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-2xl text-gray-600 leading-relaxed font-light">
-                Tailored tutoring that helps you
+                Tailored affordable tutoring that helps you
                 <br />
                 <span className="font-semibold text-[#2c3e73]">
                   own your academic success
@@ -163,7 +163,7 @@ const Home = () => {
               Real Results That Matter
             </h2>
             <p className="text-xl text-gray-300">
-              Join hundreds of students achieving their dreams
+              Join hundreds of South African students achieving their dreams
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -207,7 +207,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto font-light">
               We're committed to helping you achieve your academic goals with
-              personalized, results-driven support
+              personalized, results-driven tutoring support.
             </p>
           </div>
 
@@ -226,19 +226,19 @@ const Home = () => {
                 icon: Award,
               },
               {
-                title: "Flexible Scheduling",
+                title: "Flexible Lesson Scheduling",
                 description:
                   "Book sessions that fit your timetable. We work around your schedule, not the other way around.",
                 icon: CheckCircle,
               },
               {
-                title: "Proven Results",
+                title: "Proven Academic Results",
                 description:
                   "Our students see an average 35% improvement in their grades within 3 months.",
                 icon: TrendingUp,
               },
               {
-                title: "Small Class Sizes",
+                title: "1-on-1 Tutoring",
                 description:
                   "Maximum attention for every student. We focus on quality over quantity.",
                 icon: Users,
