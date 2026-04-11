@@ -14,7 +14,9 @@ const Header = () => {
     { name: "Tutors", path: "/tutors" },
     { name: "Pricing", path: "/pricing" },
     { name: "Contact", path: "/contact" },
-    {name: "Resources", path: "/resources" },
+    { name: "Resources", path: "/resources" },
+    // { name: "Bursary", path: "/bursary" },
+
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -26,13 +28,15 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="https://customer-assets.emergentagent.com/job_learn-ace/artifacts/edbnwe58_INTELLECTUS%20ACADEMY%20logo.jpg"
+              src="profile images/logo.jpg"
               alt="Intellectus Academy"
-              className="h-11 w-auto rounded-full object-cover"
+              className="h-12 w-auto rounded-full object-cover"
             />
-            <span className="text-xl font-bold text-[#2c3e73] hidden sm:block">
-              Intellectus Academy
-            </span>
+            <div className="hidden sm:flex flex-col leading-tight ">
+              <span className="text-[18px] chunkfive-font text-gray-600">Intellectus<span className="text-[5px] chunkfive-font text-gray-600">©</span></span>
+            
+              <span className="text-[9px] chunkfive-font header-text ">TUTORING</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
