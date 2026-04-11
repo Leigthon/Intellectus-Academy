@@ -96,7 +96,7 @@ const Home = () => {
               </div>
 
               {/* Quick Stats */}
-              <div className="flex gap-8 pt-8 border-t border-gray-200">
+        
                 {/* <div>
                   <div className="text-3xl font-bold text-[#1ac8db]">500+</div>
                   <div className="text-sm text-gray-600">Students</div>
@@ -109,7 +109,7 @@ const Home = () => {
                   <div className="text-3xl font-bold text-[#1ac8db]">35%</div>
                   <div className="text-sm text-gray-600">Grade Boost</div>
                 </div> */}
-              </div>
+              
             </div>
 
             {/* Image/Visual Element */}
