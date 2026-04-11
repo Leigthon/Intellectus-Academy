@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { LogIn, ArrowLeft } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Login() {
   const [statusMessage, setStatusMessage] = useState('');
+  const navigate = useNavigate();
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,10 +23,15 @@ export default function Login() {
       //
 
       if(email==="leigthonmessina2@gmail.com" && password==="password"){
+        // window.location.href="/Bursary";
+        navigate("/bursary");
+        return;
+      }
+
+      else if(email==="student@gmail.com" && password==="password"){
         window.location.href="https://www.testpapers.co.za/";
         return;
       }
-      
       setStatusMessage(`Login is not wired to a backend yet. (Demo – ${email} / ${password})`);
   };
 

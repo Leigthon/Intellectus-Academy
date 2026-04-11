@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[90vh] flex items-center">
+      <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[90vh] flex items-full">
         {/* Organic Background Shapes inspired by flyer */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] opacity-60">
           <svg viewBox="0 0 600 600" className="w-full h-full">
@@ -113,7 +113,7 @@ const Home = () => {
             </div>
 
             {/* Image/Visual Element */}
-            <div className="relative">
+            {/* <div className="relative">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1ac8db]/30 to-[#2c3e73]/30 rounded-[3rem] blur-3xl" />
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-[3rem] p-10 shadow-2xl border border-gray-100">
@@ -136,7 +136,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

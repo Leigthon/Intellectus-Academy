@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
                <img
-              src="https://customer-assets.emergentagent.com/job_learn-ace/artifacts/edbnwe58_INTELLECTUS%20ACADEMY%20logo.jpg"
+              src="public/profile images/logo.jpg"
               alt="Intellectus Academy"
               className="h-11 w-auto rounded-full object-cover"
             />

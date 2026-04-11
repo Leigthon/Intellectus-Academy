@@ -11,6 +11,7 @@ import Tutors from "@/pages/Tutors";
 import Pricing from "@/pages/Pricing";
 import Contact from "@/pages/Contact";
 import Resources from "@/pages/Resources";
+import Bursary from "@/pages/Bursary";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources/>}/>
+          <Route path="/bursary" element={<Bursary/>}/>
         </Routes>
         <Footer />
         <Toaster position="top-center" />
