@@ -33,9 +33,9 @@ const Header = () => {
               className="h-12 w-auto rounded-full object-cover"
             />
             <div className="hidden sm:flex flex-col leading-tight ">
-              <span className="text-[18px] chunkfive-font text-gray-600">Intellectus<span className="text-[5px] chunkfive-font text-gray-600">©</span></span>
+              <span className="text-[20px] chunkfive-font text-gray-600">Intellectus<span className="text-[5px] chunkfive-font text-gray-600">©</span></span>
             
-              <span className="text-[9px] chunkfive-font header-text ">TUTORING</span>
+              <span className="text-[9px] font-normal header-text ">TUTORING</span>
             </div>
           </Link>
 
