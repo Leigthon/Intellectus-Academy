@@ -3,18 +3,10 @@ import { tutors } from "@/mockData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Helmet } from "react-helmet";
 
 export default function Tutors() {
   return (
     <>
-      <Helmet>
-        <title>Our Tutors | Intellectus Academy</title>
-        <meta
-          name="description"
-          content="Meet our experienced tutors specializing in Maths, Physical Sciences, Life Sciences, and Accounting. Book a session with Intellectus Academy and boost your performance!"
-        />
-      </Helmet>
       <div className="min-h-screen pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
