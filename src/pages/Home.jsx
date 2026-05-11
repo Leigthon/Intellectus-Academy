@@ -8,7 +8,7 @@ import { subjects, testimonials } from "../mockData";
 const Home = () => {
   const stats = [
     { icon: Users, value: "100+", label: "Students Tutored" },
-    { icon: Award, value: "High", label: "Success Rate" },
+    { icon: Award, value: "100% Matriculant", label: "Success Rate" },
     { icon: TrendingUp, value: "Siginificant", label: "Average Grade Improvement" },
   ];
 
