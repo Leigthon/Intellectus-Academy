@@ -72,7 +72,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-2xl text-gray-600 leading-relaxed font-light">
-                Tailored affordable tutoring that helps you
+                Tailored affordable highschool tutoring that helps you
                 <br />
                 <span className="font-semibold text-[#2c3e73]">
                   own your academic success
@@ -163,7 +163,7 @@ const Home = () => {
               Real Results That Matter
             </h2>
             <p className="text-xl text-gray-300">
-              Join hundreds of South African students achieving their dreams
+              Join hundreds of grade 10 - 12 South African students achieving their dreams
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
