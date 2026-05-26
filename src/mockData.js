@@ -36,7 +36,7 @@ export const tutors = [
     id: 1,
     name: "Leigthon Messina",
     subject: "Mathematics and Physical Sciences",
-    qualification: "BSc Computer Science and Computer Engineering final year,UCT",
+    qualification: "BSc Computer Science and Computer Engineering Final year,UCT",
     experience: "4 years",
     image:
       "profile images/WhatsApp Image 2025-11-22 at 13.01.48.jpeg",
@@ -46,7 +46,7 @@ export const tutors = [
     id: 2,
     name: "Asheeqah Adonis",
     subject: "Mathematics , Physical Sciences,Accounting and Life Sciences",
-    qualification: "MBChB third year",
+    qualification: "MBChB Third year, UCT",
     experience: "2 years",
     image:
       "profile images/WhatsApp Image 2026-02-02 at 15.05.54.jpeg",
